@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoDengueApp.API", "InfoDengueApp.API\InfoDengueApp.API.csproj", "{BDB6BA1D-C05F-42C3-AB80-D46B791DE630}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{F3712FD9-09CE-445B-B1D7-C8B8487530DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{0C0ECBC3-FFAB-453D-9870-424E8D790857}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{8C48642C-B117-4ADC-8977-983992D89775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoDengueApp.Application", "InfoDengueApp.Application\InfoDengueApp.Application.csproj", "{D4DC49CA-29C7-4568-931E-0AF1AB624FD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoDengueApp.Domain", "InfoDengueApp.Domain\InfoDengueApp.Domain.csproj", "{DEC6CEAF-203B-4B22-90AB-2D7301306119}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoDengueApp.Infra.Data", "InfoDengueApp.Infra.Data\InfoDengueApp.Infra.Data.csproj", "{42E48E1E-8031-4B30-B452-1F6D6C709280}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDB6BA1D-C05F-42C3-AB80-D46B791DE630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB6BA1D-C05F-42C3-AB80-D46B791DE630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB6BA1D-C05F-42C3-AB80-D46B791DE630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB6BA1D-C05F-42C3-AB80-D46B791DE630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4DC49CA-29C7-4568-931E-0AF1AB624FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DC49CA-29C7-4568-931E-0AF1AB624FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DC49CA-29C7-4568-931E-0AF1AB624FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4DC49CA-29C7-4568-931E-0AF1AB624FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC6CEAF-203B-4B22-90AB-2D7301306119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC6CEAF-203B-4B22-90AB-2D7301306119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC6CEAF-203B-4B22-90AB-2D7301306119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC6CEAF-203B-4B22-90AB-2D7301306119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E48E1E-8031-4B30-B452-1F6D6C709280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E48E1E-8031-4B30-B452-1F6D6C709280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E48E1E-8031-4B30-B452-1F6D6C709280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E48E1E-8031-4B30-B452-1F6D6C709280}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDB6BA1D-C05F-42C3-AB80-D46B791DE630} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D4DC49CA-29C7-4568-931E-0AF1AB624FD9} = {F3712FD9-09CE-445B-B1D7-C8B8487530DD}
+		{DEC6CEAF-203B-4B22-90AB-2D7301306119} = {0C0ECBC3-FFAB-453D-9870-424E8D790857}
+		{42E48E1E-8031-4B30-B452-1F6D6C709280} = {8C48642C-B117-4ADC-8977-983992D89775}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14F3A538-1B8E-4045-9A2E-5083590B572D}
+	EndGlobalSection
+EndGlobal
