@@ -11,7 +11,7 @@ namespace InfoDengueApp.Domain.ValueObjects
     {
         public class Cpf
         {
-            public string Valor { get; private set; }
+            public string Numero { get; private set; }
 
             protected Cpf() { } // Para EF
 
@@ -25,12 +25,12 @@ namespace InfoDengueApp.Domain.ValueObjects
                 if (!EhValido(valor))
                     throw new ArgumentException("CPF inválido.");
 
-                Valor = valor;
+                Numero = valor;
             }
 
             public override string ToString()
             {
-                return Convert.ToUInt64(Valor).ToString(@"000\.000\.000\-00");
+                return Convert.ToUInt64(Numero).ToString(@"000\.000\.000\-00");
             }
 
             private bool EhValido(string cpf)
@@ -75,12 +75,12 @@ namespace InfoDengueApp.Domain.ValueObjects
 
             public override bool Equals(object obj)
             {
-                return obj is Cpf other && Valor == other.Valor;
+                return obj is Cpf other && Numero == other.Numero;
             }
 
             public override int GetHashCode()
             {
-                return Valor.GetHashCode();
+                return Numero.GetHashCode();
             }
         }
     }
