@@ -16,4 +16,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InfoDengueApp.Infra.Data\InfoDengueApp.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>
