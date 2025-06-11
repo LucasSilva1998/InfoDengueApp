@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace InfoDengueApp.Domain.Interfaces.Repository
 {
-    public interface IDadoEpidemiologicoRepository : IBaseRepository<DadoEpidemiologico>
+    public interface IDadoEpidemiologicoRepository : IBaseRepository<DadosEpidemiologicos>
     {
-        Task<DadoEpidemiologico> ObterPorIdAsync(Guid id);
-        Task<IEnumerable<DadoEpidemiologico>> ObterTodosAsync();
-        Task<IEnumerable<DadoEpidemiologico>> ObterPorIbgeAsync(int codigoIbge);
-        Task<IEnumerable<DadoEpidemiologico>> ObterPorFiltroAsync(int codigoIbge, int semanaInicio, int semanaFim, string arbovirose);
-        Task AdicionarAsync(DadoEpidemiologico dado);
-        Task AtualizarAsync(DadoEpidemiologico dado);
+        Task<DadosEpidemiologicos> ObterPorIdAsync(Guid id);
+        Task<IEnumerable<DadosEpidemiologicos>> ObterTodosAsync();
+        Task<IEnumerable<DadosEpidemiologicos>> ObterPorIbgeAsync(int codigoIbge);
+        Task<IEnumerable<DadosEpidemiologicos>> ObterPorFiltroAsync(int codigoIbge, int semanaInicio, int semanaFim, string arbovirose);
+        Task AdicionarAsync(DadosEpidemiologicos dado);
+        Task AtualizarAsync(DadosEpidemiologicos dado);
         Task RemoverAsync(Guid id);
     }
 }

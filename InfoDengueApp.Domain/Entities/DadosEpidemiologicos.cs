@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InfoDengueApp.Domain.Entities
 {
-    public class DadoEpidemiologico
+    public class DadosEpidemiologicos
     {
         public Guid Id { get; set; }
         public string Municipio { get; set; }

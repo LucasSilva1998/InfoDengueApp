@@ -1,8 +1,13 @@
 ﻿using InfoDengueApp.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace InfoDengueApp.Infra.Mapping
+namespace InfoDengueApp.Infra.Data.Mappings
 {
     public class UsuarioMap : IEntityTypeConfiguration<Usuario>
     {

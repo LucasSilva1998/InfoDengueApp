@@ -20,6 +20,10 @@ namespace InfoDengueApp.Domain.Entities
 
         public bool Ativo { get; set; }
 
+        public ICollection<LogAcesso> LogsAcesso { get; set; }
+        public ICollection<LogInclusaoEpidemiologica> LogsInclusaoEpidemiologica { get; set; }
+
+
         // Regras de negócio
         public bool PodeGerenciarUsuarios()
         {

@@ -14,6 +14,6 @@ namespace InfoDengueApp.Domain.Entities
         public DateTime DataHoraInclusao { get; set; }
 
         public Usuario Usuario { get; set; }
-        public DadoEpidemiologico DadoEpidemiologico { get; set; }
+        public DadosEpidemiologicos DadosEpidemiologicos { get; set; }
     }
 }
