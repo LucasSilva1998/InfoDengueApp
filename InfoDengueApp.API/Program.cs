@@ -19,7 +19,7 @@
 //app.MapControllers();
 
 //app.Run();
-using InfoDengueApp.API.Extensions;
+using InfoDengueApp.Infra.Data.Extensions;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,9 +30,13 @@ builder.Services.AddOpenApi();
 //Registrando os serviços de injeção de dependência
 builder.Services.AddEntityFramework(builder.Configuration);
 
+// Registrar as dependências da camada Infra
+builder.Services.AddInfrastructureServices();
+
 //Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
 

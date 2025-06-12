@@ -1,14 +1,16 @@
-﻿using System;
+﻿using InfoDengueApp.Domain.Interfaces.Core;
+using InfoDengueApp.Infra.Contexts;
+using InfoDengueApp.Infra.Data.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using InfoDengueApp.Infra.Contexts;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace InfoDengueApp.API.Extensions
+namespace InfoDengueApp.Infra.Data.Extensions
 {
     public static class EntityFrameworkExtension
     {
@@ -21,6 +23,8 @@ namespace InfoDengueApp.API.Extensions
             services.AddDbContext<DataContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("InfoDengue")));
 
+            // Adicionar injeção de dependência para o UnitOfWork
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
         }
     }
