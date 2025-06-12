@@ -24,8 +24,4 @@
     <ProjectReference Include="..\InfoDengueApp.Domain\InfoDengueApp.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
