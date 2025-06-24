@@ -20,6 +20,10 @@ namespace InfoDengueApp.Domain.Entities
 
         public bool Ativo { get; set; }
 
+        public string RefreshToken { get; set; }
+        public DateTime? RefreshTokenExpiracao { get; set; }
+
+
         public ICollection<LogAcesso> LogsAcesso { get; set; }
         public ICollection<LogInclusaoEpidemiologica> LogsInclusaoEpidemiologica { get; set; }
 

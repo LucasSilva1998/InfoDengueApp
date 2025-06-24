@@ -1,11 +1,6 @@
 ﻿using InfoDengueApp.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InfoDengueApp.Infra.Data.Mappings
 {
@@ -38,6 +33,11 @@ namespace InfoDengueApp.Infra.Data.Mappings
 
             builder.Property(u => u.Ativo)
                 .IsRequired();
+
+            builder.Property(u => u.RefreshToken)
+                .HasMaxLength(200); // Define o tamanho máximo para o token
+
+            builder.Property(u => u.RefreshTokenExpiracao);
 
             builder.HasOne(u => u.Perfil)
                 .WithMany()

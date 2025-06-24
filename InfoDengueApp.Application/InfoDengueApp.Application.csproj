@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Middlewares\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InfoDengueApp.Domain\InfoDengueApp.Domain.csproj" />
+    <ProjectReference Include="..\InfoDengueApp.Infra.Data\InfoDengueApp.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>
