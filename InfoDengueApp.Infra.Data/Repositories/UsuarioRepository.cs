@@ -45,5 +45,19 @@ namespace InfoDengueApp.Infra.Data.Repositories
                 .Include(u => u.Perfil) 
                 .FirstOrDefaultAsync(u => u.Email == email);
         }
+
+        public async Task<bool> ExisteEmailAsync(string email)
+        {
+            return await _dbSet.AnyAsync(u => u.Email == email);
+        }
+
+        public async Task<IEnumerable<Usuario>> ListarTodosAsync()
+        {
+            return await _dbSet
+                .Include(u => u.Perfil)
+                .ToListAsync();
+        }
+
+
     }
 }

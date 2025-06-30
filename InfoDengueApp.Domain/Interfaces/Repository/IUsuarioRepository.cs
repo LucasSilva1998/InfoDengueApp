@@ -15,5 +15,9 @@ namespace InfoDengueApp.Domain.Interfaces.Repository
         Task AdicionarAsync(Usuario usuario);
         Task AtualizarAsync(Usuario usuario);
         Task RemoverAsync(Guid id);
+        Task<bool> ExisteEmailAsync(string email);
+        Task<IEnumerable<Usuario>> ListarTodosAsync();
+
+
     }
 }
