@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\InfoDengueApp.Application\InfoDengueApp.Application.csproj" />
     <ProjectReference Include="..\InfoDengueApp.Domain\InfoDengueApp.Domain.csproj" />
+    <ProjectReference Include="..\InfoDengueApp.Infra.Data.ExternalServices\InfoDengueApp.Infra.Data.ExternalServices.csproj" />
     <ProjectReference Include="..\InfoDengueApp.Infra.Data\InfoDengueApp.Infra.Data.csproj" />
   </ItemGroup>
 
