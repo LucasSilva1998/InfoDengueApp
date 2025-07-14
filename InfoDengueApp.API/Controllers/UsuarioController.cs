@@ -9,7 +9,7 @@ namespace InfoDengueApp.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize] // exige autenticação JWT
+    [Authorize] 
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioService _usuarioService;

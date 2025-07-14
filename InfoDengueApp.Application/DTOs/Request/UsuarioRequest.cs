@@ -12,8 +12,7 @@ namespace InfoDengueApp.Application.DTOs.Request
         public string Email { get; set; }
         public string Senha { get; set; }
         public Guid PerfilId { get; set; }
-        public string Cpf { get; set; } // CPF como string, que será transformada no Value Object no serviço
-    }
+        public string Cpf { get; set; } 
 
 
 }

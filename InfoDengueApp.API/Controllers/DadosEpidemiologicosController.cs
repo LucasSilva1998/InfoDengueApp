@@ -9,7 +9,7 @@ namespace InfoDengueApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize] // exige token JWT para acessar
+    [Authorize] 
     public class DadosEpidemiologicosController : ControllerBase
     {
         private readonly IDadosEpidemiologicosService _dadosService;
